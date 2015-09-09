@@ -33,7 +33,7 @@ You can always use this command itself since it can take any additional `ansible
 
 ## Hooks
 
-Trellis deploys let you use customize what happens at each step of the deploy process. A single deploy has the following steps in order:
+Trellis deploys let you customize what happens at each step of the deploy process. A single deploy has the following steps in order:
 
 1. `initialize` - creates the site directory structure (or ensures it exists)
 2. `update` - clones the Git repo onto the remote server
@@ -93,7 +93,7 @@ Before you can deploy a site to a remote server, your SSH keys need to be workin
 
 The chain works like this: `local machine` -> SSH via Ansible -> `remote server` -> Git clone -> `remote Git repository`
 
-See the [SSH Keys docs](https://roots.io/trellis/docs/ssh-keys/) on how to get your SSH key added to the `web` user which is the deploy user.
+See the [SSH Keys docs](https://roots.io/trellis/docs/ssh-keys/) on how to get your SSH key added to the `web` user which is the user Trellis deploys with.
 
 ### Example
 
